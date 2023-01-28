@@ -23,17 +23,29 @@ body {
 .key-list-item {
     font-size: 1.5rem;
     border: 2px solid #000;
+    border-radius: 7px;
+    box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
     margin: 0 2rem;
     display: flex;
+    flex-direction: column;
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     background-color: #a4a3a3;
     cursor: pointer;
+    transition: all 0.7s;
+}
+
+.key-list-item span {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color:rgb(255, 243, 231);
 }
 
 .playing {
-    background-color: red;
+    background-color: rgb(234, 234, 234);
+    transform: scale(1.7);
+    box-shadow: rgba(149, 157, 165, 2.8) 0px 8px 50px;
 }
